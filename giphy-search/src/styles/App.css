@@ -1,0 +1,19 @@
+.gif-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .gif-single {
+    flex: 0 1 calc(33.333% - 20px); /* Subtract some px for margin */
+    margin: 10px;
+    box-shadow: 0px 0px 8px #ccc; /* Optional: adds a shadow for better visual separation */
+  }
+  
+  .gif-single img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* This removes extra space below the image */
+  }
+  
