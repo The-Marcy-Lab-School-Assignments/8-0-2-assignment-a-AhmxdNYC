@@ -1,9 +1,11 @@
 const express = require("express")
 const dotenv = require("dotenv")
+const path = require("path")
 dotenv.config()
 const app = express()
 // Serve static assets from the React application's dist/ folder
-app.use(express.static("../giphy-search/dist"))
+const distPath = path.join(__dirname, "../giphy-search/dist")
+app.use(express.static(distPath))
 // Giphy API endpoint to fetch trending GIFs
 app.get("/api/gifs", async (req, res) => {
   const API_URL = `https://api.giphy.com/v1/gifs/trending?api_key=${process.env.API_KEY}&limit=3`
