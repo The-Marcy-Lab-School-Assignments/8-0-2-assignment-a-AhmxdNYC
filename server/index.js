@@ -31,7 +31,7 @@ app.get("/api/search", async (req, res) => {
     res.status(500).json({ error: "Failed to search GIFs" })
   }
 })
-// Start the server
+/// Start the server
 const PORT = process.env.PORT || 8080
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`)
