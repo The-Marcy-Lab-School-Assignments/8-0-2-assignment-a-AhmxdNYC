@@ -76,11 +76,11 @@ When deploying, you will use the `npm start` command to start the server using t
 
 Before continuing, make sure that these tasks are completed!
 
-- [ ] Has a `giphy-search` project folder with a built `dist/` folder
-- [ ] Has a `server` folder with an `index.js` file and a `package.json` file inside
-- [ ] `package.json` has `express` and `dotenv` installed as a dependency and `nodemon` as a dev dependency
-- [ ] `package.json` has a `"dev"` script that uses `nodemon` and a `"start"` script that uses `node`
-- [ ] Environment variables are stored in the `.env` folder and `.env` is added to the `.gitignore` file
+- [x] Has a `giphy-search` project folder with a built `dist/` folder
+- [x] Has a `server` folder with an `index.js` file and a `package.json` file inside
+- [x] `package.json` has `express` and `dotenv` installed as a dependency and `nodemon` as a dev dependency
+- [x] `package.json` has a `"dev"` script that uses `nodemon` and a `"start"` script that uses `node`
+- [x] Environment variables are stored in the `.env` folder and `.env` is added to the `.gitignore` file
 
 ## Part 2 — API Middleman
 
@@ -98,13 +98,13 @@ Add a search endpoint to your server, letting the frontend send search GET reque
 
 **Server/Frontend Application Technical Requirements**
 
-- [ ] In `index.js`, the `express()` function is used to create an `app`
-- [ ] The `express.static()` middleware is used to server the static assets in the React application's `dist/` folder.
-- [ ] The `app` listens on an available port (I recommend `8080`)
-- [ ] A `/api/gifs` endpoint is available. 
-- [ ] The server can send a fetch request to the Giphy API using the API Key from `process.env`
-- [ ] The frontend `vite.config.js` file has been updated to enable proxy requests
-- [ ] The `/api/gifs` endpoint can parse the `req.query` parameters to get the search term and make a request to the Giphy API's search endpoint.
+- [x] In `index.js`, the `express()` function is used to create an `app`
+- [x] The `express.static()` middleware is used to server the static assets in the React application's `dist/` folder.
+- [x] The `app` listens on an available port (I recommend `8080`)
+- [x] A `/api/gifs` endpoint is available. 
+- [x] The server can send a fetch request to the Giphy API using the API Key from `process.env`
+- [x] The frontend `vite.config.js` file has been updated to enable proxy requests
+- [x] The `/api/gifs` endpoint can parse the `req.query` parameters to get the search term and make a request to the Giphy API's search endpoint.
 
 ## Part 3 — Deploy
 
